@@ -281,7 +281,33 @@ namespace RandomNumber
 
 1. ให้พิมพ์ค่าตัวแปร boolean ในข้อ 3 ออกทางหน้าจอ
 
+##โค้ดโปรแกรม
+```csharp
+using System;
 
+
+namespace lab7
+{
+    class Class1
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int randomnumber = random.Next(0, 9);
+            Console.WriteLine("Auto Random Number (0-9) : " + randomnumber);
+            int a = randomnumber;
+            Console.Write("Please Enter number(0-9) : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            bool c = a > b;
+            Console.WriteLine(" {0} > {1} ", a, b);
+            Console.WriteLine("Boolean : " + c);
+        }
+    }
+}
+```
+
+###ผลที่ได้
+![](https://github.com/Patcharanan/LAB-07/blob/master/imgs/1.PNG?raw=true)
 ##การเขียนโปรแกรมด้วยตัวดำเนินการทางตรรกะ
 
 ตัวแปรชนิด boolean มักจะถูกใช้เป็นที่เก็บผลที่เกิดจากการดำเนินการทางตรรกะ เช่น AND, OR, NOT เป็นต้น ซึ่งการดำเนินการทางตรรกะจะมีตารางความจริง เป็นตัวบอกผลในการดำเนินการของตัวดำเนินการต่างๆ ดังตัวย่าง
