@@ -618,6 +618,75 @@ Uranus |	2,873,550,000 km	|19.1993676285332 |159.994730237777
 Neptune |	4,501,000,000 km	|30.0730294221531 |250.608578517943	
 Pluto |	5,945,900,000 km		|39.7269996981071 |331.058330817559
 
+##โค้ดโปรแกรม
+```csharp
+using System;
+
+namespace lab7
+{
+    class Class4
+    {
+        static void Main(string[] args)
+        {
+            const double lightSpeed = 186000d;
+            const double AstronomicalUnit = 93000000d;
+            const double mileTokm = 1.609344;
+                
+            Console.WriteLine("\n Mercury");
+            const double mercury = 57910000d;
+            Console.WriteLine(" Length From Sun : {0} mile", mercury / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (mercury / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((mercury / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Venus");
+            const double Venus = 108200000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Venus / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Venus / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Venus / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Earth");
+            const double Earth = 149600000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Earth / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Earth / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Earth / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Mars");
+            const double Mars = 227940000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Mars / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Mars / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Mars / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Jupiter");
+            const double Jupiter = 778330000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Jupiter / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Jupiter / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Jupiter / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Uranus");
+            const double Uranus = 2873550000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Uranus / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Uranus / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Uranus / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Neptune");
+            const double Neptune = 4501000000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Neptune / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Neptune / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Neptune / mileTokm) / lightSpeed) / 60);
+
+            Console.WriteLine("\n Pluto");
+            const double Pluto = 5945900000d;
+            Console.WriteLine(" Length From Sun : {0} mile", Pluto / mileTokm);
+            Console.WriteLine(" Astronomicalunit : {0} A.U.", (Pluto / mileTokm) / AstronomicalUnit);
+            Console.WriteLine(" Light Speed : {0} minutes\n", ((Pluto / mileTokm) / lightSpeed) / 60);
+        }
+    }
+}
+```
+
+##ผลการรันโปรแกรม
+![](https://github.com/Patcharanan/LAB-07/blob/master/imgs/3.PNG?raw=true)
+
 ##คลาส Math 
 ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math  ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก 
 [system.math](http://msdn.microsoft.com/en-us/library/system.math%28v=vs.110%29.aspx) 
