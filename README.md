@@ -521,6 +521,46 @@ public class intergerTest
 9.	y%8
 10.	100*x+y%2-a
 ```
+
+##โค้ดโปรแกรม
+```csharp
+using System;
+namespace lab7
+{
+    class Class3
+    {
+        static void Main(string[] args)
+        {
+            Double a = 10, b = 20, x = 5, y = 2;
+
+            Console.WriteLine("a = 10, b = 20, x = 5, y = 2");
+            Console.WriteLine("..............................\n");
+            Console.Write("1. a + b = {0} + {1}", a, b);
+            Console.WriteLine("\n      = {0}\n", a + b);
+            Console.Write("2. x - b = {0} - {1}", x, b);
+            Console.WriteLine("\n      = {0}\n", x - b);
+            Console.Write("3. x * b = {0} * {1}", x, b);
+            Console.WriteLine("\n      = {0}\n", x * b);
+            Console.Write("4. y / a = {0} / {1}", y, a);
+            Console.WriteLine("\n      = {0}\n", y / a);
+            Console.Write("5. b % y = {0} % {1}", b, y);
+            Console.WriteLine("\n      = {0}\n", b % y);
+            Console.Write("6. y + 10%x = {0} + 10 % {1}", y, x);
+            Console.WriteLine("\n      = {0}\n", y + 10 % x);
+            Console.Write("7. a/3*5 = {0} / 3 * 5", a);
+            Console.WriteLine("\n      = {0}\n", a / 3*5);
+            Console.Write("8. 9/2*a = 9 / 2 * {0} ",a);
+            Console.WriteLine("\n      = {0}\n", 9 / 2 * a);
+            Console.Write("9. y%8 = {0} % 8 ", y);
+            Console.WriteLine("\n      = {0}\n", y % 8 );
+            Console.Write("10. 100*x+y%2-a = 100 * {0} + {1} % 2 - {2} ", x,y,a);
+            Console.WriteLine("\n      = {0}\n", 100*x+y%2-a);
+        }
+    }
+}
+```
+##ผลที่ได้
+![](https://github.com/Patcharanan/LAB-07/blob/master/imgs/2.png?raw=true)
 ##2.2.3. ชนิดข้อมูลเลขทศนิยม (Floating Point and Decimal Types)
 ตัวเลขจำนวนทศนิยม มักจะใช้ในการคำนวณทางวิทยาศาสตร์ เนื่องจากค่าในวิทยาศาสตร์ต้องการความละเอียดสูง หรือมีค่าสูงมากกว่าที่เลขจำนวนเต็มจะเก็บได้
 
